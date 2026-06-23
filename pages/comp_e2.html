@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Step-by-Step Video-to-Audio Synthesis via Negative Audio Guidance" Supplementary Videos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        p {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        body {
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="comp" style="text-align: center;">Composite audio comparisons with state-of-the-art methods</h2>
+
+    <p id="example">Example 6 <span style="float:right;"><a href="../index.html">Back to index</a></span> </p> 
+
+    <p id="captions">Captions for each audio tracks (all sounds should be contained)</p>
+    <ol style="font-size: 24px;">
+        <li>Machine Motor Humming Steadily</li>
+        <li>Metallic Clicks Sharp and Precise</li>
+        <li>Fabric Squeaking Softly</li>
+        <li>Voice Calm and Steady</li>
+        <li>Cloth Rustling Gently</li>
+    </ol>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>MMAudio + NAG (ours)</th>
+                <th>MMAudio</th>
+                <th>MMAudio + Negative prompting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/ours.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/mmaudio.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/mmaudio_np.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Seeing-and-Hearing</th>
+                <th>FoleyCrafter</th>
+                <th>FoleyCrafter + Negative prompting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/seeing_and_hearing.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/foley_crafter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+                <td>
+                    <video controls>
+                        <source src="../videos/comp/JoE9F2eO_jE_000080/foley_crafter_np.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
